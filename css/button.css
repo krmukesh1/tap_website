@@ -22,6 +22,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 11rem;
+}
+::placeholder {
+  padding-left: 10px;
 }
 .searchText {
   width: 2.8rem;
@@ -29,7 +33,7 @@ a:hover {
   font-size: 0px;
   border: none;
   outline: none;
-  margin: 8px 14px 10px 0;
+  margin: 8px 10px 10px 0;
   transition: all 0.2s linear;
 }
 .searchText:focus {
@@ -49,19 +53,25 @@ a:hover {
 
 .searchBox:hover > .searchText {
   width: 10rem;
-  padding: 0rem;
+  padding: 0rem 0 0 0px;
   font-size: 16px;
   box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid black;
   border-right: 3px solid black;
 }
 .searchBox:hover > .searchBtn {
+  padding: 0rem 0 0 0px;
   background-color: #fff !important;
-  color: #fff;
+  color: #000 !important;
 }
 i.fa.fa-search.fa-1\.5x {
   font-size: 20px;
   font-weight: 700;
+}
+i.fa.fa-search.fa-1\.5x:hover {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .searchText {
@@ -72,6 +82,13 @@ i.fa.fa-search.fa-1\.5x {
     outline: none;
     margin: 10px 16px 10px 0;
     transition: all 0.2s linear;
+  }
+  .searchBox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
   }
   .searchBox:hover > .searchText {
     width: 14rem;
