@@ -26,9 +26,10 @@ a:hover {
 .searchText {
   width: 2.8rem;
   border-radius: 5rem;
+  font-size: 0px;
   border: none;
   outline: none;
-  margin: 8px 16px 10px 0;
+  margin: 8px 14px 10px 0;
   transition: all 0.2s linear;
 }
 .searchText:focus {
@@ -38,7 +39,7 @@ a:hover {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #2fc5c2;
-  color: #2fc5c2 !important;
+  color: #000 !important;
   right: 1rem;
   position: absolute;
   display: grid;
@@ -49,12 +50,14 @@ a:hover {
 .searchBox:hover > .searchText {
   width: 10rem;
   padding: 0rem;
+  font-size: 16px;
   box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid black;
+  border-right: 3px solid black;
 }
 .searchBox:hover > .searchBtn {
   background-color: #fff !important;
-  color: #2fc5c2;
+  color: #fff;
 }
 i.fa.fa-search.fa-1\.5x {
   font-size: 20px;
@@ -62,23 +65,26 @@ i.fa.fa-search.fa-1\.5x {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .searchText {
-    width: 10rem;
+    width: 11rem;
     border-radius: 5rem;
     border: none;
+    font-size: 16px;
     outline: none;
     margin: 10px 16px 10px 0;
     transition: all 0.2s linear;
   }
   .searchBox:hover > .searchText {
-    width: 10rem;
+    width: 14rem;
     padding: 0rem;
     box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
   }
   .searchBox:hover > .searchBtn {
+    margin-right: 38px;
     background-color: #fff !important;
     color: #000;
   }
   .searchBtn {
+    margin-right: 38px;
     width: 2.5rem;
     height: 2.5rem;
     background-color: #fff;
@@ -92,30 +98,39 @@ i.fa.fa-search.fa-1\.5x {
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 600px) {
   .searchText {
-    width: 23rem;
+    width: 32rem;
     border-radius: 5rem;
     border: none;
+    font-size: 16px;
     outline: none;
     margin: 8px 16px 10px 0;
     transition: all 0.2s linear;
   }
   .searchBox:hover > .searchText {
-    width: 23rem;
-    padding: 0rem;
+    width: 31rem;
+    padding: 0 0 0 0px;
+
     box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
   }
   .searchBox:hover > .searchBtn {
-    background-color: #2fc5c2 !important;
+    background-color: #fff !important;
     color: royalblue;
   }
 }
 @media only screen and (min-device-width: 767px) and (max-device-width: 1023px) {
   .searchText {
-    width: 23rem;
+    width: 31rem;
+    font-size: 16px;
     border-radius: 5rem;
     border: none;
     outline: none;
     margin: 10px 16px 10px 0;
     transition: all 0.2s linear;
+  }
+  .searchBox:hover > .searchText {
+    width: 31rem;
+    padding: 0 0 0 0px;
+
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
   }
 }
