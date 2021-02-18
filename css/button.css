@@ -38,37 +38,84 @@ a:hover {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #2fc5c2;
-  color: #fff !important;
+  color: #2fc5c2 !important;
   right: 1rem;
   position: absolute;
   display: grid;
   place-items: center;
   border-radius: 50%;
 }
+
 .searchBox:hover > .searchText {
   width: 10rem;
   padding: 0rem;
   box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid black;
 }
 .searchBox:hover > .searchBtn {
-  background-color: #2fc5c2 !important;
-  color: royalblue;
+  background-color: #fff !important;
+  color: #2fc5c2;
 }
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  color: #fff !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+i.fa.fa-search.fa-1\.5x {
+  font-size: 20px;
+  font-weight: 700;
 }
-.fa :hover {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  color: royalblue !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .searchText {
+    width: 10rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    margin: 10px 16px 10px 0;
+    transition: all 0.2s linear;
+  }
+  .searchBox:hover > .searchText {
+    width: 10rem;
+    padding: 0rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+  }
+  .searchBox:hover > .searchBtn {
+    background-color: #fff !important;
+    color: #000;
+  }
+  .searchBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    color: #fff !important;
+    right: 1rem;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 600px) {
+  .searchText {
+    width: 23rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    margin: 8px 16px 10px 0;
+    transition: all 0.2s linear;
+  }
+  .searchBox:hover > .searchText {
+    width: 23rem;
+    padding: 0rem;
+    box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+  }
+  .searchBox:hover > .searchBtn {
+    background-color: #2fc5c2 !important;
+    color: royalblue;
+  }
+}
+@media only screen and (min-device-width: 767px) and (max-device-width: 1023px) {
+  .searchText {
+    width: 23rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    margin: 10px 16px 10px 0;
+    transition: all 0.2s linear;
+  }
 }
